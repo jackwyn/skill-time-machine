@@ -1,0 +1,21 @@
+{
+  "tasks": [
+    {
+      "id": "service-health",
+      "title": "Read current service status",
+      "system_version": "service/v1",
+      "request": {
+        "method": "GET",
+        "url": "https://api.example.com/v1/status",
+        "headers": {
+          "Authorization": "Bearer ${SERVICE_TOKEN}"
+        },
+        "timeout": 15
+      },
+      "capture_paths": [
+        "$.status",
+        "$.service.version"
+      ]
+    }
+  ]
+}
