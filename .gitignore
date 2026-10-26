@@ -3,3 +3,4 @@ __pycache__/
 .time-machine/
 .venv/
 venv/
+dist/

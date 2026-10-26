@@ -1,0 +1,6 @@
+interface:
+  display_name: Skill Time Machine
+  short_description: Detect drift and review safe, reversible repairs
+  default_prompt: Compare this workflow with its recorded baseline. Show evidence and propose changes for review; do not apply a repair without my explicit approval.
+policy:
+  allow_implicit_invocation: true
